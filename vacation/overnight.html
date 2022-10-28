@@ -24,24 +24,32 @@
           <legend>Client Information</legend>
           <label for="name">Name:</label><input type="text" id="name" />
           <label for="email">Email:</label><input type="email" id="email" />
-          <label for="">Check-In Date:</label><input type="date" name="" id="" />
-          <label for="">Number of days staying:</label><input type="date" name="" id="" />
-          <label for="">Number of Adults:</label><input type="number" name="" id="" />
-          <label for="">Number of Kids:</label><input type="number" name="" id="" />
+          <label for="checkIn">Check-In Date:</label><input type="date" name="checkIn" id="checkIn" />
+          <label for="stayDays">Number of days staying:</label><input type="date" name="stayDays" id="stayDays" />
+          <label for="adultNum">Number of Adults:</label><input type="number" name="adultNum" id="adultNum" />
+          <label for="childNum">Number of Kids:</label><input type="number" name="childNum" id="childNum" />
         </fieldset>
 
         <fieldset>
           <legend>Room Options</legend>
-          <input type="radio" name="room" id="" /><label for="" checked>Queen</label>
-          <input type="radio" name="room" id="" /><label for="">King</label>
-          <input type="radio" name="room" id="" /><label for="">2-Bedroom Suite</label>
+          <input type="radio" name="room" id="queen" /><label for="queen" checked>Queen</label>
+          <input type="radio" name="room" id="king" /><label for="king">King</label>
+          <input type="radio" name="room" id="twoBrSuite" /><label for="twoBrSuite">2-Bedroom Suite</label>
         </fieldset>
 
         <fieldset>
-          <legend>Disocunts</legend>
-          <input type="radio" name="discount" id="" checked />None<labelfor=""></labelfor=>
-          <input type="radio" name="discount" id="" />AARP/Senior<labelfor=""></label>
-          <input type="radio" name="discount" id="" />Military<labelfor=""></label>
+          <legend>Discounts</legend>
+          <input type="radio" name="discount" id="none" checked /><label for="none">None</label>
+          <input type="radio" name="discount" id="senior" /><label for="senior">AARP/Senior</label>
+          <input type="radio" name="discount" id="military" /><label for="military">Military</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Receipt</legend>
+          <label for="totalCost">Total Cost</label>          <output id=""></output>
+
+          <!-- Should be hidden if there is no discount -->
+          <label for="discountCost"></label>          <output id="discountCost"></output> 
         </fieldset>
       </main>
       <footer></footer>
