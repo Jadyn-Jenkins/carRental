@@ -15,8 +15,8 @@ const optionOut = document.querySelector('output#optionCarge');
 const ageOut = document.querySelector('output#ageCharge');
 const totalOut = document.querySelector('output#totalCost');
 
-addEventListener.calcBtn('click', )
+calcBtn.addEventListener('click', findAndDisplayReceipt)
 
-function findAndDisplayReceipt(params) {
-    
+function findAndDisplayReceipt() {
+    console.log('Works')
 }
