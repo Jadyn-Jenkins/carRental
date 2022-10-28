@@ -1,15 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
-</head>
-<body>
-    <h1>Car Rental Estimator</h1>
-    <script>
+  </head>
 
-    </script>
-</body>
+  <body>
+    <div id="container">
+      <form>
+        <h1>ACME Car Rental</h1>
+
+        <fieldset>
+          <legend>Rental Details</legend>
+          <label for="pickupDate">Pickup date: </label>
+          <input type="date" id="pickupDate" />
+          <label for="daysRented">Number of days:</label>
+          <input type="text" id="daysRented" value="xx" />
+        </fieldset>
+
+        <fieldset>
+          <legend>Options</legend>
+
+          <input
+            type="checkbox"
+            name="elecToll"
+            id="elecToll"
+            value="elecToll"
+          />
+          <label for="elecToll">Electric Toll ($3.95/day)</label>
+
+          <input 
+            type="checkbox" 
+            name="gps" 
+            id="gps" 
+            value="gps" 
+            />
+          <label for="gps">GPS ($2.95/day)</label>
+
+          <input
+            type="checkbox"
+            name="roadsideAssist"
+            id="roadsideAssist"
+            value="roadsideAssist"
+          />
+          <label for="roadsideAssist">Roadside Assistance ($2.95/day)</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Are you above 25 years old?</legend>
+          <label for="below25">No</label>
+          <input type="radio" name="under25" value="no" id="no" />
+          <label for="">Yes</label>
+          <input type="radio" name="under25" value="yes" id="yes" />
+        </fieldset>
+      </form>
+
+      <fieldset>
+        <input type="button" value="Find Estimate" id="estimateTotalCost" />
+
+        <label for="rentCost">Car rental:</label>
+        <output id="rentCost"></output>
+        <label for="optionCharge">Options:</label>
+        <output id="optionCharge"></output>
+        <label for="ageCharge">Under 25 surcarge:</label>
+        <output id="ageCharge"></output>
+        <label for="totalCost">Total Due:</label>
+        <output id="totalCost"></output>
+      </fieldset>
+
+      <script></script>
+    </div>
+  </body>
 </html>
