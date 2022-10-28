@@ -7,25 +7,23 @@
     <title>Ice Cream Stand</title>
   </head>
   <body>
+    <div id="container"></div>
+    <h1>Ice Cream Shop</h1>
     <form>
       <fieldset>
-        <legend></legend>
+        <legend>Ice Cream Options</legend>
 
-        <label for=""></label>
-        <input type="text" id="" />
+        <label for="scoopNum">Number of scoops</label>
+        <input type="text" id="scoopNum" />
+
+        <input type="radio" name="size" id="cone" />
+        <label for="cone">Cone</label>
+        <input type="radio" name="size" id="cup" />
+        <label for="cup">Cup</label>
       </fieldset>
 
       <fieldset>
-        <legend></legend>
-
-        <input type="radio" name="" id="" />
-        <label for=""></label>
-        <input type="radio" name="" id="" />
-        <label for=""></label>
-      </fieldset>
-
-      <fieldset>
-        <legend></legend>
+        <legend>Extras</legend>
 
         <input type="checkbox" name="spinkles" id="spinkles" />
         <label for="spinkles">Spinkles ($0.50)</label>
@@ -41,23 +39,15 @@
       </fieldset>
 
       <fieldset>
-        <legend></legend>
+        <legend>Receipt</legend>
 
         <input type="button" value="Submit Order" id="submitOrder" />
 
-
-
-
-        <!-- <label for="baseCost">Base Price:</label>
-        <output id="baseCost"></output> -->
-
-        <p><label for="baseCost">Base Price:</label></p> 
+        <label for="baseCost">Base Price:</label>
+        <output id="baseCost"></output>
 
         <label for="taxCost">Tax:</label>
         <output id="taxCost"></output>
-
-
-
 
         <label for="totalCost">Total Due:</label>
         <output id="totalCost"></output>
@@ -65,5 +55,6 @@
     </form>
 
     <script></script>
+    </div>
   </body>
 </html>
